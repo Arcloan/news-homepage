@@ -17,7 +17,7 @@
   </head>
   <body class="font-Inter lg:min-h-[100svh]">
     <header
-      class="mx-auto mb-8 mt-8 flex max-w-[90%] justify-between lg:mb-16 lg:mt-12 lg:max-w-[75%]"
+      class="mx-auto mb-8 mt-8 flex max-w-[90%] justify-between lg:mb-12 lg:mt-12 lg:max-w-[75%]"
     >
       <img src="./assets/images/logo.svg" alt="" />
       <button popovertarget="Menu">
@@ -33,26 +33,62 @@
         </button>
         <nav class="ml-[5%] mt-20 flex flex-col gap-4">
           <ul class="contents">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">New</a></li>
-            <li><a href="#">Popular</a></li>
-            <li><a href="#">Trending</a></li>
-            <li><a href="#">Categories</a></li>
+            <li>
+              <a href="#" class="cursor-pointer hover:text-softOrange">Home</a>
+            </li>
+            <li>
+              <a href="#" class="cursor-pointer hover:text-softOrange">New</a>
+            </li>
+            <li>
+              <a href="#" class="cursor-pointer hover:text-softOrange"
+                >Popular</a
+              >
+            </li>
+            <li>
+              <a href="#" class="cursor-pointer hover:text-softOrange"
+                >Trending</a
+              >
+            </li>
+            <li>
+              <a href="#" class="cursor-pointer hover:text-softOrange"
+                >Categories</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
       <nav class="flex gap-8 max-lg:hidden">
         <ul class="contents">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">New</a></li>
-          <li><a href="#">Popular</a></li>
-          <li><a href="#">Trending</a></li>
-          <li><a href="#">Categories</a></li>
+          <li>
+            <a href="#" class="hover:cursor-pointer hover:text-softOrange"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:cursor-pointer hover:text-softOrange"
+              >New</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:cursor-pointer hover:text-softOrange"
+              >Popular</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:cursor-pointer hover:text-softOrange"
+              >Trending</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:cursor-pointer hover:text-softOrange"
+              >Categories</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
     <main
-      class="mx-auto lg:grid lg:max-w-[75%] lg:grid-cols-3 lg:grid-rows-[30vh_min-content_min-content] lg:gap-8"
+      class="mx-auto lg:grid lg:max-w-[75%] lg:grid-cols-3 lg:grid-rows-[1fr_min-content_min-content] lg:gap-8"
     >
       <picture class="lg:col-[1_/_3] lg:row-[1_/_2] lg:h-max">
         <source
@@ -80,24 +116,30 @@
           really fulfilling its promise?
         </p>
         <button
-          class="mb-8 mt-4 bg-softRed px-6 py-3 text-sm font-bold uppercase tracking-widest lg:mb-0 lg:mt-auto lg:w-max"
+          class="mb-8 mt-4 bg-softRed px-6 py-3 text-sm font-bold uppercase tracking-widest hover:cursor-pointer hover:bg-veryDarkBlue hover:text-offWhite lg:mb-0 lg:mt-auto lg:w-max"
         >
           Read more
         </button>
       </section>
       <aside
-        class="mx-auto mb-8 max-w-[90%] bg-veryDarkBlue p-4 text-grayshBlue lg:col-[3_/_4] lg:row-[1_/_3] lg:mb-0 lg:max-w-none lg:text-sm"
+        class="mx-auto mb-8 max-w-[90%] bg-veryDarkBlue p-4 text-grayshBlue lg:col-[3_/_4] lg:row-[1_/_3] lg:mb-0 lg:max-w-none"
       >
-        <h2 class="mb-4 text-2xl font-bold text-softOrange">New</h2>
+        <h2 class="mb-4 text-2xl font-bold text-softOrange lg:mt-4 lg:text-4xl">
+          New
+        </h2>
         <div class="flex flex-col divide-y-[1px] divide-grayshBlue">
           <div class="py-6 pt-2">
-            <h3 class="mb-2 text-xl font-bold text-offWhite lg:text-base">
+            <h3
+              class="mb-2 text-xl font-bold text-offWhite hover:cursor-pointer hover:text-softOrange"
+            >
               Hydrogen VS Electric Cars
             </h3>
             <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
           </div>
           <div class="py-6">
-            <h3 class="mb-2 text-xl font-bold text-offWhite lg:text-base">
+            <h3
+              class="mb-2 text-xl font-bold text-offWhite hover:cursor-pointer hover:text-softOrange"
+            >
               The Downsides of AI Artistry
             </h3>
             <p>
@@ -106,7 +148,9 @@
             </p>
           </div>
           <div class="py-6 pb-2">
-            <h3 class="mb-2 text-xl font-bold text-offWhite lg:text-base">
+            <h3
+              class="mb-2 text-xl font-bold text-offWhite hover:cursor-pointer hover:text-softOrange"
+            >
               Is VC Funding Drying Up?
             </h3>
             <p>
@@ -128,8 +172,12 @@
           />
           <div class="flex flex-col gap-2">
             <p class="text-2xl text-softRed">01</p>
-            <h3 class="text-[0.875rem] font-bold">Reviving Retro PCs</h3>
-            <p class="text-sm text-grayshBlue">
+            <h3
+              class="text-[0.875rem] font-bold hover:cursor-pointer hover:text-softOrange"
+            >
+              Reviving Retro PCs
+            </h3>
+            <p class="text-sm text-darkGrayshBlue">
               What happens when old Pcs are given modern upgrades?
             </p>
           </div>
@@ -142,8 +190,12 @@
           />
           <div class="flex flex-col gap-2">
             <p class="text-2xl text-softRed">02</p>
-            <h3 class="text-[0.875rem] font-bold">Top 10 Laptops of 2022</h3>
-            <p class="text-sm text-grayshBlue">
+            <h3
+              class="text-[0.875rem] font-bold hover:cursor-pointer hover:text-softOrange"
+            >
+              Top 10 Laptops of 2022
+            </h3>
+            <p class="text-sm text-darkGrayshBlue">
               Our best picks for various needs and budgets.
             </p>
           </div>
@@ -156,8 +208,12 @@
           />
           <div class="flex flex-col gap-2">
             <p class="text-2xl text-softRed">03</p>
-            <h3 class="text-[0.875rem] font-bold">The growth of Gaming</h3>
-            <p class="text-sm text-grayshBlue">
+            <h3
+              class="text-[0.875rem] font-bold hover:cursor-pointer hover:text-softOrange"
+            >
+              The growth of Gaming
+            </h3>
+            <p class="text-sm text-darkGrayshBlue">
               How the pandemic has sparked fresh opportunities.
             </p>
           </div>
