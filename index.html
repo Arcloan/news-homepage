@@ -15,9 +15,9 @@
 
     <title>Frontend Mentor | News homepage</title>
   </head>
-  <body>
+  <body class="font-Inter lg:min-h-[100svh]">
     <header
-      class="mx-auto mb-8 mt-8 flex max-w-[90%] justify-between lg:mb-16 lg:mt-12 lg:max-w-[80%]"
+      class="mx-auto mb-8 mt-8 flex max-w-[90%] justify-between lg:mb-16 lg:mt-12 lg:max-w-[75%]"
     >
       <img src="./assets/images/logo.svg" alt="" />
       <button popovertarget="Menu">
@@ -26,12 +26,12 @@
       <div
         id="Menu"
         popover
-        class="bg-offWhite fixed inset-0 left-[30%] h-auto w-auto"
+        class="fixed inset-0 left-[30%] h-auto w-auto bg-offWhite"
       >
         <button class="ml-auto mr-[5%] mt-8 block" popovertarget="Menu">
           <img src="./assets/images/icon-menu-close.svg" alt="Close Menu" />
         </button>
-        <nav class="ml-[5%] mt-16 flex flex-col gap-4">
+        <nav class="ml-[5%] mt-20 flex flex-col gap-4">
           <ul class="contents">
             <li><a href="#">Home</a></li>
             <li><a href="#">New</a></li>
@@ -51,8 +51,10 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <picture>
+    <main
+      class="mx-auto lg:grid lg:max-w-[75%] lg:grid-cols-3 lg:grid-rows-[30vh_min-content_min-content] lg:gap-8"
+    >
+      <picture class="lg:col-[1_/_3] lg:row-[1_/_2] lg:h-max">
         <source
           srcset="assets/images/image-web-3-desktop.jpg"
           media="(min-width:1024px)"
@@ -60,21 +62,106 @@
         <img
           src="assets/images/image-web-3-mobile.jpg"
           alt=""
-          class="mx-auto max-w-[90%]"
+          class="mx-auto max-w-[90%] lg:h-full lg:max-w-full"
         />
       </picture>
       <h1
-        class="mb-4 ml-[5%] mt-4 max-w-[13ch] text-left text-[2.5rem] font-bold leading-none"
+        class="mb-4 ml-[5%] mt-4 max-w-[12ch] text-left text-[2.5rem] font-bold leading-none lg:col-[1] lg:row-[2] lg:m-0 lg:max-w-none lg:text-5xl"
       >
         The Bright Future of Web 3.0?
       </h1>
-      <section aria-label="Summary of content" class="mx-auto max-w-[90%]">
-        <p class="text-darkGrayshBlue">
+      <section
+        aria-label="Summary of content"
+        class="mx-auto max-w-[90%] lg:grid lg:max-w-none"
+      >
+        <p class="text-sm leading-6 text-darkGrayshBlue">
           We dive into the next evolution of the web that claims to put the
           power of the platforms back into the hands of the people. But is i
           really fulfilling its promise?
         </p>
-        <button class="">Read more</button>
+        <button
+          class="mb-8 mt-4 bg-softRed px-6 py-3 text-sm font-bold uppercase tracking-widest lg:mb-0 lg:mt-auto lg:w-max"
+        >
+          Read more
+        </button>
+      </section>
+      <aside
+        class="mx-auto mb-8 max-w-[90%] bg-veryDarkBlue p-4 text-grayshBlue lg:col-[3_/_4] lg:row-[1_/_3] lg:mb-0 lg:max-w-none lg:text-sm"
+      >
+        <h2 class="mb-4 text-2xl font-bold text-softOrange">New</h2>
+        <div class="flex flex-col divide-y-[1px] divide-grayshBlue">
+          <div class="py-6 pt-2">
+            <h3 class="mb-2 text-xl font-bold text-offWhite lg:text-base">
+              Hydrogen VS Electric Cars
+            </h3>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div class="py-6">
+            <h3 class="mb-2 text-xl font-bold text-offWhite lg:text-base">
+              The Downsides of AI Artistry
+            </h3>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <div class="py-6 pb-2">
+            <h3 class="mb-2 text-xl font-bold text-offWhite lg:text-base">
+              Is VC Funding Drying Up?
+            </h3>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </div>
+      </aside>
+      <section
+        aria-label="articles"
+        class="mx-auto mb-16 flex max-w-[90%] flex-col gap-6 lg:col-[1_/_4] lg:row-[3] lg:contents lg:max-w-[none]"
+      >
+        <article class="flex gap-4">
+          <img
+            src="./assets/images/image-retro-pcs.jpg"
+            alt=""
+            class="w-26 h-28"
+          />
+          <div class="flex flex-col gap-2">
+            <p class="text-2xl text-softRed">01</p>
+            <h3 class="text-[0.875rem] font-bold">Reviving Retro PCs</h3>
+            <p class="text-sm text-grayshBlue">
+              What happens when old Pcs are given modern upgrades?
+            </p>
+          </div>
+        </article>
+        <article class="flex gap-4">
+          <img
+            src="./assets/images/image-top-laptops.jpg"
+            alt=""
+            class="w-26 h-28"
+          />
+          <div class="flex flex-col gap-2">
+            <p class="text-2xl text-softRed">02</p>
+            <h3 class="text-[0.875rem] font-bold">Top 10 Laptops of 2022</h3>
+            <p class="text-sm text-grayshBlue">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </article>
+        <article class="flex gap-4">
+          <img
+            src="./assets/images/image-gaming-growth.jpg"
+            alt=""
+            class="w-26 h-28"
+          />
+          <div class="flex flex-col gap-2">
+            <p class="text-2xl text-softRed">03</p>
+            <h3 class="text-[0.875rem] font-bold">The growth of Gaming</h3>
+            <p class="text-sm text-grayshBlue">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </article>
       </section>
     </main>
   </body>
